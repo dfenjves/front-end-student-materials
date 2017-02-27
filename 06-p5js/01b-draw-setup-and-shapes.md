@@ -36,9 +36,9 @@ The technical term for these special words is **functions**.
 
 ## What's a Function?
 
-A function is a command or instruction written in code. When we want to give a command or tell our computer to do something we **call** a function. The syntax for calling a function is to write the name of the function followed by a set of parentheses like so `myFunction()`. Sometimes you may write more inside of the parentheses, we'll cover that really soon.
+A function is a command or instruction written in code. When we want to give a command or tell our computer to do something we **call** a function. The syntax for calling a function is to write the name of the function followed by a set of parentheses like so: `myFunction()`. Sometimes you may write more inside of the parentheses, we'll cover that really soon. Also notice how the first word of the function is not capitalized, but any additional words are - we call this "camelCase".
 
-`ellipse`, for example, is a function another developer wrote that we can call on to say "hey computer, draw an ellipse".
+`ellipse()`, for example, is a function another developer wrote that we can call on to say "hey computer, draw an ellipse".
 
 You probably noticed the word `function` in the code above before `setup` and `draw`.  These are special functions that p5.js needs us to define.  They are special because p5 will call on them for us *automatically*
 
@@ -56,10 +56,10 @@ Inside of `setup` and `draw` is where we will write code and call on other funct
 
 ## Calling Functions & Arguments
 
-As we said, calling a function is giving your computer a command to do something.  Computer's follow the instructions you give them in the order you give them. Let's look more in depth at some of the instructions we've seen:
+As we said, calling a function is giving your computer a command to do something.  Computers follow the instructions you give them in the order you give them. Let's look more in depth at some of the instructions we've seen:
 
 ### `createCanvas`
-A well named function has a name that describes to other programmers like you exactly what it does.
+A well named function has a name that describes to other programmers (like you) exactly what it does.
 A function named `createCanvas`, not surprisingly, creates the canvas that the rest of our shapes will be drawn on.
 
 It seems like creating a canvas is something that we would want to happen once at
@@ -75,8 +75,7 @@ In the code above there are some numbers after the name of the function:
 createCanvas(640, 480);
 ```
 
-What's going on there? Those numbers separated by commas are called **arguments** to
-a function.
+What's going on there? Those numbers separated by commas are called **arguments** to a function.
 
 It's kind of like when we say `createCanvas` the computer is like,
 
@@ -91,7 +90,7 @@ info so I have a few questions."
 
 The way we supply that information to our friendly computer is with arguments.
 
-In between the parentheses we tell it the width and the height in pixels. So,
+In between the parentheses we tell it the width and the height of the canvas in pixels. So,
 `createCanvas(250, 1000);` would create a narrow but tall canvas 250 pixels
 across and 1000 pixels tall.
 
@@ -125,12 +124,11 @@ using `x` and `y` coordinates on the canvas.
 
 ### A Note on the p5.js Coordinate System
 There's one key thing to keep in mind when describing `x` and `y` coordinates to a
-p5 function.  From math class you are probably familiar with using an `(x,y)` coordinate system. `(0,0)` would be in the bottom left,
-the x axis increases to the right and the y axis increases upwardly.
+p5 function.  From math class you are probably familiar with using an `(x,y)` coordinate system. `(0,0)` would be in the bottom left, the x axis increases to the right and the y axis increases upwardly.
 
 The p5.js coordinate system is sort of reversed. `(0,0)` is actually the *top left* corner.
-The x axis still increases rightward, but the y axis gets bigger in a
-downward direction.
+The x axis still increases rightward, but *the y axis gets bigger in a
+downward direction.*
 
 ![coordinate plane](https://static1.squarespace.com/static/567458eda128e6372f9c1656/t/573cd44e4d088ee581102125/1463604324172/?format=2500w)
 
@@ -179,7 +177,7 @@ Where those numbers represent *actual data*, here in the Syntax and Parameters s
 
 ### Learning to Learn
 
-Programmers look up documentation all the time. Basically, programming is challenging, and programmers want to spend their time and energy focusing on the challenging parts.  So for things that are pure memorization like  the order of arguments and names of functions, you can let the documentation remember for you.
+Programmers look up documentation all the time. Basically, programming is challenging, and programmers want to spend their time and energy focusing on the challenging parts.  So for things that are pure memorization like the order of arguments and names of functions, you can let the documentation remember for you.
 
 Referring to the documentation doesn't mean you are doing something wrong or aren't getting the hang of things. In fact, other developers would be impressed because it proves you are already learning how to independently teach yourself!
 
