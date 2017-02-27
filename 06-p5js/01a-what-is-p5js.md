@@ -1,4 +1,4 @@
-# What is p5.js
+# What is p5.js?
 
 ## Introduction
 
@@ -62,11 +62,9 @@ like Google Chrome.
 
 - You can write code that will **animate** your shapes and make them move over time.
 
-- You can write code that will make the things you draw respond to **events**. An event is something
-like the user of our program clicking or moving the mouse.
+- You can write code that will make the things you draw respond to **events**. An event is something like the user of our program clicking or moving the mouse.
 
-By combining different pieces of code that do these things you can build up programs that can be simple or complex, interactive
-games or works of art, and you'll be able to share your programs with your friends and family
+By combining different pieces of code that do these things you can build up programs that can be simple or complex, interactive games or works of art, and you'll be able to share your programs with your friends and family
 on the internet!
 
 
