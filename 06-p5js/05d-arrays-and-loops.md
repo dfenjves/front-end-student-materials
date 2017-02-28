@@ -46,10 +46,10 @@ That's closer, but we're still basically at the same place. We have an array wit
 
 ### Step 2: `for` every bubble in the array
 
-What if inside of `draw` we were constantly looping over the `bubbles` array.  **For** every item we should call the `ellipse` function to draw the bubble.  Let's give it a shot, we need 3 pieces of information for the `for` loop.
+What if inside of `draw` we were constantly looping over the `bubbles` array?  **For** every item we should call the `ellipse` function to draw the bubble.  Let's give it a shot - we need 3 pieces of information for the `for` loop.
 
-- **Where to start:** well array indexes start at `0` so that seems like a good place to me.
-- **When to end:** We don't want to keep looping if we're past the end of the array so how about up to `bubbles.length`, *whatever that value is currently*.
+- **Where to start:**  Array indexes start at `0` so that seems like a good place to me.
+- **When to end:** We don't want to keep looping if we're past the end of the array, so how about up to `bubbles.length`, *whatever that value is currently*.
 - **How to count:** Definitely wouldn't want to skip over anything in the array so by `1` works fine.
 
 All together that's something like:
@@ -69,7 +69,7 @@ for(var i = 0; i < bubbles.length; i++) {
 
 **A:** Why of course, `i`!
 
-`bubbles[i]`, or, in english, the value of the `bubbles` array at the index `i`, will be the first bubble object the first pass of the loop. Then the second time it will be the second bubble, then the third, then the next all the way until the last bubble.  That's just what we want because we want to call `ellipse` with the values from each bubble object.
+`bubbles[i]`, or, in english, the value of the `bubbles` array at the index `i`, will be the bubble object we work with the first pass of the loop. Then the second time it will be the second bubble, then the third, then the next all the way until the last bubble.  That's just what we want because we want to call `ellipse` with the values from each bubble object.
 
 *Inside* the loop, we'll use whatever the current value of `i` is to make a variable called `currentBubble`.
 
