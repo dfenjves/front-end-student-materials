@@ -2,7 +2,7 @@
 
 ![rube goldberg](https://media.giphy.com/media/ywNJFJR54KfQY/giphy.gif)
 
-When you interact with any program on your computer you are used to it being responsive to your input. Your input might be clicking certain things, moving your mouse to different areas, or pressing certain keys on the keyboard These ways that you interact with the program are called **events**.
+When you interact with any program on your computer you are used to it being responsive to your input. Your input might be clicking certain things, moving your mouse to different areas, or pressing certain keys on the keyboard. These ways that you interact with the program are called **events**.
 
 p5.js is actually *always waiting or listening* for certain events to happen. When the event does happen, it provides us, the programmer, a way to fire off code in response to the event.
 
