@@ -58,7 +58,7 @@ Well, there is a way to do this-- We can create our own variables.
 
 ## Declaring and Assigning Variables
 
-Making a variable start's with a name. Naming variables can sometimes be surprisingly difficult. The trick is to make it descriptive and sensical to any other developer reading your code.  "Other developer" can even mean you in a few days from now! You will be shocked by how quickly you can forget what is going on in your own code when you revisit it.
+Making a variable starts with a name. Naming variables can sometimes be surprisingly difficult. The trick is to make it descriptive and sensical to any other developer reading your code.  "Other developer" can even mean you in a few days from now! You will be shocked by how quickly you can forget what is going on in your own code when you revisit it.
 
 Since that number that was the same for every ellipse is the size of each racing circle, I'll call it `racerSize`. You can choose another name, but it should be a reasonable choice that describes the value it represents.
 
@@ -68,7 +68,7 @@ Making a variable is pretty simple, at the top of the file outside any function 
 var racerSize = 60;
 ```
 
-That's it. Now instead of **hard-coding** in the number `60` or whatever it is, place the variable name `racerSize` as the third and fourth arguments to each `ellipse` function. Check this out:
+That's it. Now instead of **hard-coding** in the number `60`, place the variable name `racerSize` as the third and fourth arguments to each `ellipse` function. Check this out:
 
 ![first variable](/resources/first-variable.gif)
 
@@ -95,7 +95,7 @@ You'll often see this done on one line, but it's important to understand that it
 
 ## A Quick Refactor
 
-I see an additional place that we may want to use variables, that is the starting location of each ellipse. Though not exactly the same value, there is definitely a relationship between each starting location.
+I see an additional place that we may want to use variables, and that is the starting location of each ellipse. Though not exactly the same value, there is definitely a relationship between each starting location.
 
 Let's add two variables `startX` and `startY`. The first argument to every `ellipse` function will be `startX`, and the second argument will have some relationship to our initial value of `startY`.
 
@@ -160,13 +160,13 @@ You can also decrease, or *decrement* a value. `y = y - 10` or `y -= 10`. Both a
 
 ### Getting the Racers to Move, Finally
 
-*At the bottom of `draw`* after all the other code has ran, but before `draw` is called the next time, we need to tell our variable to increment it's value so it will be bigger for the next call to `draw`.
+*At the bottom of `draw`* after all the other code has ran, but before `draw` is called the next time, we need to tell our variable to increment its value so it will be bigger for the next call to `draw`.
 
 Hopefully that was clear, let that take a moment to sink in before seeing how it's all put together.
 
 ![tie](/resources/tie-race.gif)
 
-A 4 way tie! Every time `draw` is called the `x` coordinate of each circle has increased by `2`.  Here's the final code with an additional variable `speed`:
+A 4 way tie! Every time `draw` is called, the `x` coordinate of each circle has increased by `2`.  Here's the final code with an additional variable `speed`:
 
 ```javascript
 var racerSize = 40;
